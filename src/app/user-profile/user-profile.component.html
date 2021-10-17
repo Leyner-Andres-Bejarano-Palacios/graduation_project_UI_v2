@@ -25,7 +25,7 @@
               <div class="col-md-4 pl-1">
                 <div class="form-group">
                   <label> Test</label>
-                  <input name="email" id="test" type="text" class="form-control" placeholder="..." [(ngModel)] = "task.isTest">
+                  <input name="isTest" id="isTest" type="text" class="form-control" placeholder="..." [(ngModel)] = "task.isTest">
                 </div>
               </div>
             </div>
@@ -33,7 +33,7 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <label>Url</label>
-                  <input type="text" class="form-control" placeholder="..." id = "url" [(ngModel)] = "task.requestedUrl" name = "requestedUrl">
+                  <input type="text" class="form-control" placeholder="..." id = "requestedUrl" [(ngModel)] = "task.requestedUrl" name = "requestedUrl">
                 </div>
               </div>
             </div>
@@ -49,7 +49,7 @@
               <div class="col-lg-8 ml-auto mr-auto">
                 <div class="row">
                   <div class="col-md-4">
-                    <button class="btn btn-primary btn-block" (click)="showNotification('bottom','center')">Submit task</button>
+                    <button class="btn btn-primary btn-block" (click)="showNotification('bottom','center')" type ="submit">Submit task</button>
                   </div>
                 </div>
               </div>
