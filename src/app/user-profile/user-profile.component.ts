@@ -84,4 +84,13 @@ export class UserProfileComponent implements OnInit {
     this.saveTask();
   }
 
+  goToGithubUrl(): void {
+    window.location.href = 'https://github.com/Leyner-Andres-Bejarano-Palacios/java_springboot_docker_backend';
+  }
+
+  goToYoutubeUrl(): void {
+    window.location.href = 'https://www.youtube.com/watch?v=vAizgtR4V7I&t=1s';
+}
+
+
 }

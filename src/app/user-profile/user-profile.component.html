@@ -5,26 +5,26 @@
     <div class="col-md-8">
       <div class="card">
         <div class="card-header">
-          <h5 class="title">Ingress task</h5>
+          <h5 class="title">Ingrese tarea</h5>
         </div>
         <div class="card-body">
           <form (ngSubmit) = "onSubmit()">
             <div class="row">
               <div class="col-md-5 pr-1">
                 <div class="form-group">
-                  <label>Task Name</label>
+                  <label>Nombre de la tarea</label>
                   <input type="text" class="form-control"  placeholder="..." id = "taskName" [(ngModel)] = "task.taskName" name = "taskName">
                 </div>
               </div>
               <div class="col-md-3 px-1">
                 <div class="form-group">
-                  <label>Priority</label>
+                  <label>Prioridad</label>
                   <input type="text" class="form-control" placeholder="..." id = "priority" [(ngModel)] = "task.priority" name = "priority">
                 </div>
               </div>
               <div class="col-md-4 pl-1">
                 <div class="form-group">
-                  <label> Test</label>
+                  <label>Codigo Test</label>
                   <input name="isTest" id="isTest" type="text" class="form-control" placeholder="..." [(ngModel)] = "task.isTest">
                 </div>
               </div>
@@ -40,7 +40,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label>Description</label>
+                  <label>Descripcion</label>
                   <input type="text" class="form-control" placeholder="...">
                 </div>
               </div>
@@ -49,7 +49,7 @@
               <div class="col-lg-8 ml-auto mr-auto">
                 <div class="row">
                   <div class="col-md-4">
-                    <button class="btn btn-primary btn-block" (click)="showNotification('bottom','center')" type ="submit">Submit task</button>
+                    <button class="btn btn-primary btn-block" (click)="showNotification('bottom','center')" type ="submit">Ingresar tarea</button>
                   </div>
                 </div>
               </div>
@@ -69,26 +69,26 @@
               <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
             </a>
             <p class="description" style="color:rgb(14, 8, 8);">
-              What should I add here ?
+              ¿ Que debo agregar aqui ?
             </p>
           </div>
           <p class="description text-center" style="color:rgb(14, 8, 8);">
-            In this form you are expected 
-            <br> to add information that the 
-            <br> priorizer system use to 
-            <br> Indentify the ideal moment for
-            <br> the execution of your task and
-            <br> the input required to give you
-            <br> the information you need
+            En este formulario se espera
+            <br> que añadas la informacion
+            <br> qie el priorizador utiliza 
+            <br> Para identificar el momento ideal
+            <br> para la ejecucion de tu tarea
+            <br> como el input requerido de 
+            <br> la informacion  que necesitas
           </p>
         </div>
         <hr>
         <div class="button-container">
-          <button href="https://www.youtube.com/watch?v=vAizgtR4V7I&t=1s" class="btn btn-neutral btn-icon btn-round btn-lg">
-            <i class="fab fa-youtube"></i>
+          <button type="button" (click)="goToYoutubeUrl()" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i  class="fab fa-youtube"></i>
           </button>
-          <button href="https://github.com/Leyner-Andres-Bejarano-Palacios/java_springboot_docker_backend" class="btn btn-neutral btn-icon btn-round btn-lg">
-            <i class="fab fa-github"></i>
+          <button type="button" (click)="goToGithubUrl()" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i  class="fab fa-github"></i>
           </button>
         </div>
       </div>
