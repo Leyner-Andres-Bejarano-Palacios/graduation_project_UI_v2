@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
 import { Task } from './task';
+import { TaskMap } from './taskMap';
+
 
 
 @Injectable({
@@ -34,6 +36,10 @@ export class TaskService {
 
   deleteTask(id: number): Observable<Object>{
     return this.httpClient.delete(`${this.baseURL}/${id}`);
+  }
+
+  getTasksMapList(): Observable<TaskMap[]>{
+    return this.httpClient.get<TaskMap[]>(`${this.baseAMPURL}/tasks-priorize-all`);
   }
 
 }
